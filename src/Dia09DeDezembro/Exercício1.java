@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercício1 {
 	public static void main(String args[])
 	{
-		int a,b,c;
+		int a,b,c,maior;
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.println("\nEntre com o valor de A:");
@@ -15,14 +15,16 @@ public class Exercício1 {
 		System.out.println("\nEntre com o valor de C:");
 		c = leia.nextInt();
 		
-		if(a>b && b<c)
+		if(a>b && a>c)
 		{
-			System.out.println;
-			
-	}
-
-		
+			maior = a;				
+		}
+		else if (b>a &&  b>c){
+			 maior = b;}	
+		else{ maior =c;
 	}	
+		System.out.println("O maior valor é: " +maior);
+	}
 }
 
 
